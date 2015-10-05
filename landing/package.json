@@ -1,0 +1,11 @@
+{
+  "name": "flightrep.landing",
+  "description": "FlightRep Landing Page",
+  "dependencies": {
+    "express": "*",
+    "bootstrap": "*"
+  },
+  "devDependencies": {
+    "grunt": "*"
+  }
+}
