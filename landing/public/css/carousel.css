@@ -1,43 +1,38 @@
-/*.slide-img {
-    height: 300px;
-    width: 300px;
+/* For full-screen to work need to set body to 100% height without margins */
+html, body {
+   height: 100%;
+   margin: 0;
 }
-*/
 
-.float-right {
-    float: right;
-    margin: auto;
+#full-screen {
+   min-height: 100%; 
 }
 
 .carousel {
-    height: 600px;
+    height: 100%;
     width: 100%;
-    margin-bottom: 60px;
 }
-/* Since positioning the image, we need to help out the caption */
- .carousel-caption {
+
+/* To overlay the caption with the image */
+.carousel-caption {
     z-index: 10;
 }
-/* Declare heights because of positioning of img element */
- .carousel .item {
+
+.carousel .item {
     width: 100%;
-    height: 600px;
-    background-color: #777;
+    height: 100%;
+
+    background-color: black;
 }
+
 .carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 600px;
+    position: relative;
 }
+
 @media (min-width: 768px) {
     .carousel-caption p {
-        margin-bottom: 20px;
+        margin-bottom: 50%;
         font-size: 21px;
         line-height: 1.4;
     }
-}
-img {
-    background: white;
 }
