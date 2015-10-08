@@ -4,10 +4,6 @@ html, body {
    margin: 0;
 }
 
-#full-screen {
-   min-height: 100%; 
-}
-
 .carousel {
     height: 100%;
     width: 100%;
@@ -31,8 +27,20 @@ html, body {
 
 @media (min-width: 768px) {
     .carousel-caption p {
-        margin-bottom: 50%;
+        margin-bottom: 30%;
         font-size: 21px;
         line-height: 1.4;
+        padding: 0;
+        height: 150px;
     }
+}
+
+.solution {
+    background-color:rgba(199, 217, 224, 0.5);
+    width: 50%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 15px;
 }
