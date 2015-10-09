@@ -37,8 +37,8 @@ html, body {
 
 .solution {
     background-color:rgba(199, 217, 224, 0.5);
-    width: 50%;
-    height: 300px;
+    width: 100%;
+    height: 500px;
     margin-left: auto;
     margin-right: auto;
     color: white;
