@@ -16,11 +16,30 @@ app.post('/', function(req, res) {
     // don't keep user waiting
     res.redirect("/");
 
-    // process email signup
-    var new_email = req.body.email_service_solution;
-    fs.appendFileSync('emails.txt', new_email + "\n");
-    // notify_email_signup(new_email);
+    // TODO: refactor this code
+    // process email signup    
+    var new_email_signup_service = req.body.email_service_solution;
+    var new_email_signup_compensation = req.body.email_service_compensation;
+    var new_email_signup_engage = req.body.email_service_engage;
 
+    var signup_source = "";
+    if (!!new_email_signup_service) {
+        new_email = new_email_signup_service;
+        signup_source = "signup_service";
+    }
+    if (!!new_email_signup_compensation) {
+        new_email = new_email_signup_compensation;        
+        signup_source = "signup_compensation";
+    }
+    if (!!new_email_signup_engage) {
+        new_email = new_email_signup_engage;
+        signup_source = "signup_engage"
+    }
+    // END TODO: refactor this code
+
+    fs.appendFileSync('emails.csv', new_email + "; " + signup_source + ";\n");
+
+    // notify_email_signup(new_email);
 });
 
 function notify_email_signup(new_email) {
