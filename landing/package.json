@@ -3,6 +3,7 @@
   "description": "FlightRep Landing Page",
   "dependencies": {
     "express": "*",
+    "body-parser": "*",
     "bootstrap": "*"
   },
   "devDependencies": {
