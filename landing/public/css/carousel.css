@@ -9,6 +9,12 @@ html, body {
     width: 100%;
 }
 
+/* To overlay the email signup with the image */
+.signup {
+    margin-bottom: 10%;
+    color: black;
+}
+
 /* To overlay the caption with the image */
 .carousel-caption {
     z-index: 10;
@@ -27,18 +33,17 @@ html, body {
 
 @media (min-width: 768px) {
     .carousel-caption p {
-        margin-bottom: 30%;
+        margin-bottom: 25%;
         font-size: 21px;
         line-height: 1.4;
         padding: 0;
-        height: 150px;
+        height: 100px;
     }
 }
 
 .solution {
     background-color:rgba(199, 217, 224, 0.5);
     width: 100%;
-    height: 500px;
     margin-left: auto;
     margin-right: auto;
     color: white;

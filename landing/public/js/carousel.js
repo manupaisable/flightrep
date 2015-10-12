@@ -2,7 +2,7 @@ jQuery(function($) {
 
     var solution_map = new Map();
 
-    solution_map.set("airline_solution_display", 
+    solution_map.set("service_solution_display", 
                      "Comment your flight in real time in the app." + "<br>" +
                      "Once you're back online we inform the airline on social media." + "<br>" +
                      "Twitter and/or Facebook. Anonymously or not. You decide!");
@@ -17,7 +17,7 @@ jQuery(function($) {
                      "Compare airlines' service as reported by fellow passengers." + "<br>" +
                      "We will tell airlines where they need to improve most!");
 
-    $("a[id$=solution_display]").on('click', function(evt) {
+    $("a[id$=_solution_display]").on('click', function(evt) {
 
         evt.preventDefault();
 
