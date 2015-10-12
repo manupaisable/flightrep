@@ -4,6 +4,7 @@
   "dependencies": {
     "express": "*",
     "body-parser": "*",
+    "nodemailer": "*",
     "bootstrap": "*"
   },
   "devDependencies": {
